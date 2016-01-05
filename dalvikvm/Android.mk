@@ -26,6 +26,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CPP_EXTENSION := cc
 LOCAL_SRC_FILES := dalvikvm.cc
 LOCAL_CFLAGS := $(dalvikvm_cflags)
++LOCAL_NO_LTO_SUPPORT := true
 LOCAL_C_INCLUDES := art/runtime
 LOCAL_SHARED_LIBRARIES := libdl liblog libnativehelper
 LOCAL_WHOLE_STATIC_LIBRARIES := libsigchain
